@@ -20,5 +20,13 @@
     </a>
 </p>
 
+<h1 align="center">🎓 Installation</h1>
+<p align="center">
+Step 1: Copy the addons folder into your project.<br>
+Step 2: Enable it in Project Settings > Plugins.<br>
+Step 3: Time to create! 🎉<br><br>
+You can download this test project to check out an example scene.
+</p>
+
 # 📄​ License
 This project is licensed under the MIT License. You are free to modify and use it however you like. Credit is not required, but always appreciated.
