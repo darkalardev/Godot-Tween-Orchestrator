@@ -11,10 +11,3 @@
 /examples/**  export-ignore
 /logos/**  export-ignore
 /media/**  export-ignore
-*.gd.uid    export-ignore
-/addons/tween_orchestrator/icon.png.import  export-ignore
-/addons/tween_orchestrator/tween_orchestrator_manager.gd.uid export-ignore
-/addons/tween_orchestrator/code/tween_binding.gd.uid  export-ignore
-/addons/tween_orchestrator/code/tween_clip.gd.uid export-ignore
-/addons/tween_orchestrator/code/tween_orchestrator.gd.uid export-ignore
-/addons/tween_orchestrator/code/tween_track.gd.uid export-ignore
