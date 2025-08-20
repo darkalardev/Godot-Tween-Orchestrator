@@ -7,7 +7,9 @@
 /README.md  export-ignore
 /commit-msg-template.txt  export-ignore
 /project.godot  export-ignore
-/code  export-ignore
-/examples  export-ignore
-/logos  export-ignore
-/media  export-ignore
+/code/**  export-ignore
+/examples/**  export-ignore
+/logos/**  export-ignore
+/media/**  export-ignore
+*.gd.uid    export-ignore
+*.png.import    export-ignore
