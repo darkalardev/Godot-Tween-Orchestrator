@@ -1,0 +1,148 @@
+[gd_scene load_steps=20 format=3 uid="uid://b3x6ronqqmcc5"]
+
+[ext_resource type="Script" uid="uid://yvjhnskrr57n" path="res://code/example_screen.gd" id="1_vosf0"]
+[ext_resource type="Script" uid="uid://b4kcko00x55o2" path="res://addons/tween_orchestrator/code/tween_binding.gd" id="2_cxlab"]
+[ext_resource type="Texture2D" uid="uid://dsm8dd76cbay" path="res://logos/tween_orchestrator_logo.png" id="2_uulrj"]
+[ext_resource type="Script" uid="uid://1s2bjr4b34m7" path="res://addons/tween_orchestrator/code/tween_clip.gd" id="3_8hxmi"]
+[ext_resource type="Script" uid="uid://dra7drptq4q48" path="res://addons/tween_orchestrator/code/tween_track.gd" id="4_32kvf"]
+
+[sub_resource type="Resource" id="Resource_6i8f1"]
+script = ExtResource("4_32kvf")
+property = &"modulate"
+to = Color(1, 1, 1, 0)
+duration = 0.0
+metadata/_custom_type_script = "uid://dra7drptq4q48"
+
+[sub_resource type="Resource" id="Resource_yxwfk"]
+script = ExtResource("4_32kvf")
+property = &"modulate"
+to = Color(1, 1, 1, 1)
+duration = 1.0
+wait_before = 0.5
+metadata/_custom_type_script = "uid://dra7drptq4q48"
+
+[sub_resource type="Resource" id="Resource_ayqcy"]
+script = ExtResource("3_8hxmi")
+tracks = Array[ExtResource("4_32kvf")]([SubResource("Resource_6i8f1"), SubResource("Resource_yxwfk")])
+metadata/_custom_type_script = "uid://1s2bjr4b34m7"
+
+[sub_resource type="Resource" id="Resource_qh7gp"]
+script = ExtResource("2_cxlab")
+target_path = NodePath("Logo")
+clip = SubResource("Resource_ayqcy")
+metadata/_custom_type_script = "uid://b4kcko00x55o2"
+
+[sub_resource type="Resource" id="Resource_cxlab"]
+script = ExtResource("4_32kvf")
+property = &"scale"
+to = Vector2(1.5, 1.5)
+metadata/_custom_type_script = "uid://dra7drptq4q48"
+
+[sub_resource type="Resource" id="Resource_v5jd2"]
+script = ExtResource("4_32kvf")
+property = &"scale"
+to = Vector2(1, 1)
+metadata/_custom_type_script = "uid://dra7drptq4q48"
+
+[sub_resource type="Resource" id="Resource_8hxmi"]
+script = ExtResource("3_8hxmi")
+tracks = Array[ExtResource("4_32kvf")]([SubResource("Resource_cxlab"), SubResource("Resource_v5jd2")])
+metadata/_custom_type_script = "uid://1s2bjr4b34m7"
+
+[sub_resource type="Resource" id="Resource_32kvf"]
+script = ExtResource("2_cxlab")
+target_path = NodePath("Logo")
+clip = SubResource("Resource_8hxmi")
+metadata/_custom_type_script = "uid://b4kcko00x55o2"
+
+[sub_resource type="Resource" id="Resource_xt5xh"]
+script = ExtResource("4_32kvf")
+property = &"modulate"
+to = Color(1, 1, 1, 0)
+duration = 0.0
+metadata/_custom_type_script = "uid://dra7drptq4q48"
+
+[sub_resource type="Resource" id="Resource_kfhhh"]
+script = ExtResource("4_32kvf")
+property = &"modulate"
+to = Color(1, 1, 1, 1)
+duration = 1.0
+parallel = true
+metadata/_custom_type_script = "uid://dra7drptq4q48"
+
+[sub_resource type="Resource" id="Resource_3eay3"]
+script = ExtResource("4_32kvf")
+property = &"scale"
+to = Vector2(1.5, 1.5)
+parallel = true
+metadata/_custom_type_script = "uid://dra7drptq4q48"
+
+[sub_resource type="Resource" id="Resource_w7gdw"]
+script = ExtResource("4_32kvf")
+property = &"scale"
+to = Vector2(1, 1)
+metadata/_custom_type_script = "uid://dra7drptq4q48"
+
+[sub_resource type="Resource" id="Resource_gdklj"]
+script = ExtResource("3_8hxmi")
+tracks = Array[ExtResource("4_32kvf")]([SubResource("Resource_xt5xh"), SubResource("Resource_kfhhh"), SubResource("Resource_3eay3"), SubResource("Resource_w7gdw")])
+metadata/_custom_type_script = "uid://1s2bjr4b34m7"
+
+[sub_resource type="Resource" id="Resource_ur51a"]
+script = ExtResource("2_cxlab")
+target_path = NodePath("Logo")
+clip = SubResource("Resource_gdklj")
+metadata/_custom_type_script = "uid://b4kcko00x55o2"
+
+[node name="CanvasLayer" type="CanvasLayer" node_paths=PackedStringArray("logo")]
+script = ExtResource("1_vosf0")
+logo = NodePath("Logo")
+tweens = Array[ExtResource("2_cxlab")]([SubResource("Resource_qh7gp"), SubResource("Resource_32kvf"), SubResource("Resource_ur51a")])
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = -1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = -125.0
+offset_right = 260.0
+offset_bottom = 125.0
+grow_vertical = 2
+pivot_offset = Vector2(0, 125)
+alignment = 1
+
+[node name="FadeButton" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Fade"
+
+[node name="ScaleButton" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Scale"
+
+[node name="FadeAndScaleButton" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Fade and Scale"
+
+[node name="Logo" type="TextureRect" parent="."]
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -450.0
+offset_top = -125.0
+offset_right = -200.0
+offset_bottom = 125.0
+grow_horizontal = 0
+grow_vertical = 2
+pivot_offset = Vector2(125, 125)
+texture = ExtResource("2_uulrj")
+expand_mode = 2
+stretch_mode = 5
+
+[connection signal="pressed" from="VBoxContainer/FadeButton" to="." method="_on_fade_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ScaleButton" to="." method="_on_scale_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/FadeAndScaleButton" to="." method="_on_fade_and_scale_button_pressed"]

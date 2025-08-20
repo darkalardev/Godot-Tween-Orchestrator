@@ -1,0 +1,28 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Tween Orchestrator"
+run/main_scene="uid://b3x6ronqqmcc5"
+config/features=PackedStringArray("4.5", "Mobile")
+config/icon="uid://dsm8dd76cbay"
+
+[autoload]
+
+TweenOrchestrator="*res://addons/tween_orchestrator/code/tween_orchestrator.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/tween_orchestrator/plugin.cfg")
+
+[rendering]
+
+renderer/rendering_method="mobile"
