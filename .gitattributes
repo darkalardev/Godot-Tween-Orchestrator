@@ -1,2 +1,13 @@
 # Normalize EOL for all files that Git considers text files.
 * text=auto eol=lf
+/.editorconfig  export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/LICENSE  export-ignore
+/README.md  export-ignore
+/commit-msg-template.txt  export-ignore
+/project.godot  export-ignore
+/code  export-ignore
+/examples  export-ignore
+/logos  export-ignore
+/media  export-ignore
