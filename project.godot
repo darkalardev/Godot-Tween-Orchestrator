@@ -13,7 +13,7 @@ config_version=5
 config/name="Tween Orchestrator"
 run/main_scene="uid://b3x6ronqqmcc5"
 config/features=PackedStringArray("4.5", "Mobile")
-config/icon="uid://dsm8dd76cbay"
+config/icon="uid://b8b0eft32bhcx"
 
 [autoload]
 

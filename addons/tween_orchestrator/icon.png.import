@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsm8dd76cbay"
-path="res://.godot/imported/tween_orchestrator_logo.png-b5c44e813b34e99e08fe37aee228ec56.ctex"
+uid="uid://b8b0eft32bhcx"
+path="res://.godot/imported/icon.png-5192d14b714941ba790b7dcf1b9f0e11.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://logos/tween_orchestrator_logo.png"
-dest_files=["res://.godot/imported/tween_orchestrator_logo.png-b5c44e813b34e99e08fe37aee228ec56.ctex"]
+source_file="res://addons/tween_orchestrator/icon.png"
+dest_files=["res://.godot/imported/icon.png-5192d14b714941ba790b7dcf1b9f0e11.ctex"]
 
 [params]
 

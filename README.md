@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="256px" src="logos/tween_orchestrator_logo.png" align="center" alt="Godot Tween Orchestrator" />
+  <img width="256px" src="addons/tween_orchestrator/icon.png" align="center" alt="Godot Tween Orchestrator" />
   <h2 align="center">Godot Tween Orchestrator</h2>
   
   <p align="center">Tween Orchestrator is a utility designed to simplify animations in Godot.</p>
