@@ -20,12 +20,15 @@
     </a>
 </p>
 
-
 <h1 align="center">🪄​ Downloads</h1>
 <div align="center">
 
 [![Download from the Store](https://img.shields.io/badge/Download_from_the_Store-blue?style=for-the-badge&logo=godotengine&logoColor=white)](https://godotengine.org/asset-library/asset/4253)<br>
 [![Download from GitHub](https://img.shields.io/badge/Download_from_GitHub-black?style=for-the-badge&logo=github&logoColor=white)](https://github.com/darkalardev/Godot-Tween-Orchestrator/releases)
+
+<p align="center">
+  <b>⚠️ This plugin requires <a href="https://godotengine.org/">Godot 4.5+</a></b>
+</p>
 
 </div>
 
